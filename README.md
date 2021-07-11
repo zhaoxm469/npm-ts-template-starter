@@ -11,6 +11,8 @@
 
 npm run build
 
+运行index.html进行预览
+
 npm run dev  
 
 ## 目录结构
