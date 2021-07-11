@@ -3,6 +3,11 @@
 	"version": "1.0.0",
 	"description": "构建库或者插件的 项目通用模板 .",
 	"keywords": [],
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"commit": "cz"
+	},
 	"main": "./dist/index.umd.js",
 	"module": "./dist/index.es.js",
 	"exports": {
@@ -23,11 +28,6 @@
 		"eslint-config-airbnb-base": "^14.2.1",
 		"eslint-plugin-import": "^2.23.4",
 		"vite": "^2.4.1"
-	},
-	"scripts": {
-		"dev": "vite",
-		"build": "vite build",
-		"commit": "cz"
 	},
 	"config": {
 		"commitizen": {
