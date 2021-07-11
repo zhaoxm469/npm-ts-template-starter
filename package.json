@@ -1,0 +1,30 @@
+{
+	"name": "npm-ts-template-starter",
+	"version": "1.0.0",
+	"description": "构建库或者插件的 项目通用模板 .",
+	"keywords": [],
+	"main": "./dist/index.umd.js",
+	"module": "./dist/index.es.js",
+	"exports": {
+		".": {
+			"import": "./dist/index.es.js",
+			"require": "./dist/index.umd.js"
+		}
+	},
+	"author": "zhaoxingming",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/node": "^16.3.0",
+		"@typescript-eslint/eslint-plugin": "^4.28.2",
+		"@typescript-eslint/parser": "^4.28.2",
+		"commitizen": "^4.2.4",
+		"eslint": "^7.30.0",
+		"eslint-config-airbnb-base": "^14.2.1",
+		"eslint-plugin-import": "^2.23.4",
+		"vite": "^2.4.1"
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build"
+	}
+}
