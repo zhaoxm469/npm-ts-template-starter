@@ -4,7 +4,7 @@
 
 ## 使用
 
-将这个项目克隆到本地, 推荐使用 [template-fast-cli](https://www.npmjs.com/package/template-fast-cli) 进行此模板的拉取.  
+将这个项目克隆到本地, 推荐使用 [fast-template-cli](https://www.npmjs.com/package/fast-template-cli) 进行此模板的拉取.  
 然后编辑package.json 和其他所有需要的文件以匹配你的项目.  
 
 编译代码, 请运行
@@ -15,4 +15,4 @@ npm run build
 
 npm run dev  
 
-## 目录结构 
+## 目录结构
