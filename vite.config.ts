@@ -10,7 +10,9 @@ export default defineConfig({
         target: 'es2015',
         lib: {
             entry: resolve(__dirname, 'src/main.ts'),
-            name: 'index',
+            // 暴露全局的变量
+            name: 'AppCache',
+            formats: ['es', 'umd']
         },
     },
 });
