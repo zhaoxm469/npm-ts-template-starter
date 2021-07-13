@@ -1,9 +1,10 @@
 {
     "singleQuote": true,
-    "semi": true,
     "bracketSpacing": true,
     "tabWidth": 4,
     "useTabs": false,
     "htmlWhitespaceSensitivity": "strict",
-    "trailingComma": "none"
+    "trailingComma": "none",
+    "eslintIntegration": true,
+    "semi": true
 }

@@ -17,5 +17,6 @@ module.exports = {
     rules: {
         indent: [2, 4],
         'no-console': 0,
+		'comma-dangle':0
     },
 };
