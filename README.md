@@ -7,11 +7,11 @@
 将这个项目克隆到本地, 推荐使用 [fast-template-cli](https://www.npmjs.com/package/fast-template-cli) 进行创建此模板.  
 
 1. 编辑package.json 和其他所有需要的文件以匹配你的项目.  
-2. 修改src里面的源代码
-3. 如果用 umd 方式引入 ， 务必修改 rollup 里的 output.name ，这个是暴露外部的名称
-4. npm run dev , 启动一个web服务，页面指向 /examples/index.html,修改此页面 可书写 demo 测试。
-5. npm run build 打包项目
-6. npm run npmp 发布项目到npm
+2. 修改src里面的源代码.
+3. 如果用 umd 方式引入 ， 务必修改 rollup 里的 output.name ，这个是暴露外部的方法名称.
+4. npm run dev , 启动一个web服务，页面指向 /examples/index.html,修改此页面 可书写 demo 测试.
+5. npm run build 打包项目.
+6. npm run npmp 发布项目到npm.
 
 ## script 命令
 
