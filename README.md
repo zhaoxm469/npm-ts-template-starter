@@ -2,7 +2,7 @@
 
 使用typescript进行编写, 基于vie打包 . 主要用于工作中 构建库或者插件 项目通用模板 .
 
-注意: 当前打包出来的JS 只兼容ES6, 不进行ES5语法的转换. 如果需要转换成ES5 可以使用[rollup版本打包](https://github.com/zhaoxm469/npm-ts-template-starter/tree/rollup).
+注意: 当前打包出来的JS 只兼容ES6, `不进行ES5语法的转换` . 如果需要转换成ES5 可以使用[rollup版本](https://github.com/zhaoxm469/npm-ts-template-starter/tree/rollup).
 
 ## 使用
 
