@@ -16,7 +16,7 @@ export default defineConfig({
     output: [
         {
             file: resolve('./', pkg.main),
-            format: 'amd',
+            format: 'umd',
             name: 'AppCache'
         },
         {
