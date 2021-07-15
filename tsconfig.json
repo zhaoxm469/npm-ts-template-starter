@@ -1,12 +1,14 @@
 {
     "compilerOptions": {
         "experimentalDecorators": true,
-        "target": "ES5",
+        "target": "esnext",
         "moduleResolution": "node",
         "strict": true,
         "sourceMap": true,
         "resolveJsonModule": true,
         "esModuleInterop": true,
         "lib": ["esnext", "dom"]
-    }
+    },
+    "exclude": ["./node_modules/**/*"],
+    "include": ["./src/**/*"]
 }
