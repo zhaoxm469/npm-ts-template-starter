@@ -31,7 +31,7 @@
 
 ## 目录结构
 
-```test
+```text
 ├── README.md								## 项目文档说明
 ├── package.json							## 里边相关配置 需要自己手动更改为项目匹配的信息
 ├── npmpublish.js							## npm 发布命令
