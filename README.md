@@ -17,11 +17,11 @@
 
 ## script 命令
 
-预览 examples html 文件  
+开发, 预览. 访问地址对应 /examples/index.html 页面
 
 * npm run dev  
 
-打包 插件
+打包
 
 * npm run build
 
