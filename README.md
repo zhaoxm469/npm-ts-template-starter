@@ -2,16 +2,18 @@
 
 使用typescript进行编写, 基于vie打包 . 主要用于工作中 构建库或者插件, 发布到npm的 项目通用模板 .
 
+注意: 当前打包出来的JS 只兼容ES6, 不进行ES5语法的转换. 如果需要转换成ES5 可以使用[rollup版本打包](https://github.com/zhaoxm469/npm-ts-template-starter/tree/rollup).
+
 ## 使用
 
 将这个项目克隆到本地, 推荐使用 [fast-template-cli](https://www.npmjs.com/package/fast-template-cli) 进行创建此模板.  
 
 1. 编辑package.json 和其他所有需要的文件以匹配你的项目.  
-2. 修改src里面的源代码
-3. npm run dev , 在 examples 里的index.html 可以进行测试，或者在test 利用进行测试。
-4. 修改vite.config.js 里面 build.lib.name属性（暴露的全局变量名称）
-5. npm run build 打包项目
-6. npm run npmp 发布项目到npm
+2. 修改src里面的源代码.
+3. npm run dev , 在 examples 里的index.html 可以进行测试，或者在test 利用进行测试.
+4. 修改vite.config.js 里面 build.lib.name属性（暴露的全局变量名称）.
+5. npm run build 打包项目.
+6. npm run npmp 发布项目到npm.
 
 ## script 命令
 
