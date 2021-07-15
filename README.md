@@ -1,6 +1,6 @@
 # 说明
 
-使用typescript进行编写, 基于rollup打包 . 主要用于工作中 构建库或者插件, 发布到npm的 项目通用模板 .
+使用typescript进行编写, 基于rollup打包 . 主要用于工作中 构建库或者插 项目通用模板 .
 
 ## 使用
 
@@ -15,11 +15,11 @@
 
 ## script 命令
 
-预览 examples html 文件  
+开发, 预览. 访问地址对应 /examples/index.html 页面
 
 * npm run dev  
 
-打包 插件
+打包
 
 * npm run build
 
