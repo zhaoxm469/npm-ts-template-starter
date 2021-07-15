@@ -1,7 +1,7 @@
 /*
  * @Author: zhaoxingming
  * @Date: 2021-07-15 16:08:04
- * @LastEditTime: 2021-07-15 19:17:52
+ * @LastEditTime: 2021-07-15 21:15:21
  * @LastEditors: vscode
  * @Description:npm发布命令，自动修改程序版本号
  *
@@ -16,17 +16,17 @@
  *
  */
 
-const inquirer = require('inquirer');
-const path = require('path');
-const fs = require('fs');
-const chalk = require('chalk');
-const execa = require('execa');
-const ora = require('ora');
-const { version, name: pkgName } = require('./package.json');
+import { prompt } from 'inquirer';
+import { resolve } from 'path';
+import { readFileSync, writeFileSync } from 'fs';
+import { yellow, green } from 'chalk';
+import execa from 'execa';
+import ora from 'ora';
+import { version, name as pkgName } from './package.json';
 
-const pkgPath = path.resolve(__dirname, './package.json');
+const pkgPath = resolve(__dirname, './package.json');
 
-const pkg = fs.readFileSync(pkgPath, 'utf-8');
+const pkg = readFileSync(pkgPath, 'utf-8');
 const newVersion = (`${version.replace(/\D/g, '') - '' + 1}`).padStart(3, '0').split('').join('.');
 const newPkg = pkg.replace(version, newVersion);
 
@@ -42,14 +42,14 @@ const loading = {
 };
 
 (async () => {
-    const { updateVer } = await inquirer.prompt({
+    const { updateVer } = await prompt({
         type: 'confirm',
         name: 'updateVer',
-        message: `版本号即将从 ${chalk.yellow(`v${version}`)} 变更为 -> ${chalk.yellow(`v${newVersion}`)} ，是否继续\n`,
+        message: `版本号即将从 ${yellow(`v${version}`)} 变更为 -> ${yellow(`v${newVersion}`)} ，是否继续\n`,
     });
 
     if (updateVer) {
-        fs.writeFileSync(pkgPath, newPkg);
+        writeFileSync(pkgPath, newPkg);
         try {
             loading.show('npm发布中...\n');
             await execa('npm', ['publish']);
@@ -62,7 +62,7 @@ const loading = {
 
     if (!updateVer) return;
 
-    const { autoGitCommit } = await inquirer.prompt({
+    const { autoGitCommit } = await prompt({
         type: 'confirm',
         name: 'autoGitCommit',
         message: '自动提交package.json文件到远程仓库？\n',
@@ -82,6 +82,6 @@ const loading = {
         loading.hide();
     }
 
-    console.log(`\n🎉 ${chalk.green('npm发布成功!!')} `);
-    console.log(`\n👉 输入命令 ${chalk.green(`npm install -g ${pkgName}`)} 更新至最新版本 ${chalk.yellow(`v${newVersion}`)} \n`);
+    console.log(`\n🎉 ${green('npm发布成功!!')} `);
+    console.log(`\n👉 输入命令 ${green(`npm install -g ${pkgName}`)} 更新至最新版本 ${yellow(`v${newVersion}`)} \n`);
 })();
