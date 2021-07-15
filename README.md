@@ -36,7 +36,7 @@
 ├── package.json							## 里边相关配置 需要自己手动更改为项目匹配的信息
 ├── npmpublish.js							## npm 发布命令
 ├── vite.config.ts							## vite 配置
-├── examples								## 自测时，自己可以 运行 : npm run dev ，启动index.html . 然后引用插件进行自测
+├── examples								## 自测时，自己可以 运行 : npm run dev ，启动index.html . 然后引用插件进行自测等
 │   └── index.html
 ├── tsconfig.json							## ts 配置文件
 ├── test									## 测试
