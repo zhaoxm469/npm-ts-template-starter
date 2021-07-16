@@ -31,20 +31,20 @@
 
 ## 目录结构
 
-```text
-├── README.md								## 项目文档说明
-├── package.json							## 里边相关配置 需要自己手动更改为项目匹配的信息
-├── npmpublish.js							## npm 发布命令
-├── vite.config.ts							## vite 配置
-├── examples								## 自测时，自己可以 运行 : npm run dev ，启动index.html . 然后引用插件进行自测等
+```code
+├── README.md                              // 项目文档说明
+├── package.json                           // 里边相关配置 需要自己手动更改为项目匹配的信息
+├── vite.config.ts                         // vite 配置
+├── npmpublish.js                          // npm 发布命令
+├── examples                               // 自测时，自己可以 运行 : npm run dev ，启动index.html . 然后引用插件进行自测等
 │   └── index.html
-├── tsconfig.json							## ts 配置文件
-├── test									## 测试
-├── docs									## 文档
-├── types									## 数据模型
-├── dist									## 打包编译输出的文件目录
-│   ├── npm-package-template.es.js			## 打包输出的 es 引入文件
-│   └── npm-package-template.umd.js			## 打包输出的 und 格式文件
-└── src										## 源码目录
-	└── main.ts								## 源码入口文件
+├── tsconfig.json                          // ts 配置文件
+├── test                                   // 测试
+├── docs                                   // 文档
+├── types                                  // 数据模型
+├── dist                                   // 打包编译输出的文件目录
+│   ├── npm-package-template.es.js         // 打包输出的 es 引入文件
+│   └── npm-package-template.umd.js        // 打包输出的 und 格式文件
+└── src                                    // 源码目录
+    └── main.ts                            // 源码入口文件
 ```
