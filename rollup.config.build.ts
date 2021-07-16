@@ -29,7 +29,8 @@ export default defineConfig({
     ],
     plugins: [
         typescript({
-            declarationDir: path.join(__dirname, './dist/')
+            declarationDir: path.join(__dirname, './dist/'),
+            declaration: true
         }),
         nodeResolve({
             extensions,
