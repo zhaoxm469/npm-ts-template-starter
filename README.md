@@ -47,3 +47,64 @@
 └── src										// 源码目录
 	└── main.ts								// 源码入口文件
 ```
+
+```code
+/*
+* 文件目录结构说明
+* 2019/11/25
+* @author zxm
+*/
+
+├── dist                    // 生成打包后的文件
+├── node_modules            // 项目依赖包文件夹
+├── public                  // public中的静态资源会被复制输出到目录(dist)中
+│   └── index.html          // 项目入口文件
+│   └── favicon.ico         // 网页icon
+├── src                     // 项目源码
+│   ├── api                 // 与后端交互使用的api方法和数据处理
+│   │   └── config.js       // 请求配置信息
+│   │   └── inde.js         // 请求统一出口，方便模块使用
+│   ├── assets              // 放置一些静态资源 （不要有大图片，图片较大放在public下）
+│   │       └── styles      // 样式资源
+│   │       └── images      // 图片资源
+│   ├── components          // 全局的公共组建
+│   │   └── nf-table        // 全局组件目录（组件命名需要统一，例如nf-table） (nf代表全局组件)
+│   │       └── index.vue   // 组件源码
+│   │       └── dom.vue     // 组件使用式例
+│   ├── filters             // 全局过滤器文件夹
+│   │       └── index.vue   // 全局过滤器源码 - 当然如果过滤器过多，也可以继续拆分不同的模块
+│   ├── directives          // 全局指令文件夹
+│   │       └── index.vue   // 全局指令源码 - 当然如果指令过多，也可以继续拆分不同的模块
+│   └── mixins              // 全局的mixins混入功能文件夹
+│           └── index.vue   // 全局混入功能 - 当然如果混入功能过多，也可以继续拆分不同的模块
+│   ├── router              // 路由文件夹
+│   │   ├── index.js        // 导出路由的配置
+│   │   └── modules         // 路由按模块划分
+│   │       └── about.js    // 相关路由配置
+│   ├── store               // 全局状态管理文件夹
+│   │   ├── index.js        // 我们组装模块并导出 store 的地方
+│   │   ├── states.js       // 根级别的 states
+│   │   ├── actions.js      // 根级别的 action
+│   │   ├── mutations.js    // 根级别的 mutation
+│   │   ├── getters.js      // 根级别的 getters
+│   │   └── modules         // 模块化的vuex文件夹
+│   │       └── element.js  // 饿了么UI全局功能的配置， 按钮大小等
+│   ├── utils               // 工具方法目录
+│   │   └── index.js        // 封装的工具函数
+│   │   └── base.js         // 挂载到Vue原型上的一些方法
+│   │   └── rules.js        // 规则验证的一些方法
+│   ├── views               // 视图源码文件夹
+│   │   └── home            // 首页源码文件夹（统一驼峰命名）
+│   │       └── index.vue   // 首页源码文件 （入口源码统一命名index.vue,个别情况除外）
+│   │       └── add         // 首页添加页面 （一般情况，添加和编辑是一个页面 建议复用，个别情况除外）
+│   │       └── components  // 首页代码所拆分的组件文件夹
+│   │               └── indexTopSelect.vue  // 首页所引用的子组件（引用的子组件，务必以 indexXXXX.vue 来命名，通过index就可以看出 是index.vue所引用的组件。）
+│   └── main                // 应用入口文件
+│   └── main                // 主应用程序组件
+├── .eslintr.js             // eslint配置的规则
+├── .gititnore              // 配置不提交git仓库的文件
+├── .pretterrc              // vscode 格式化配置文件
+├── .env.development        // 开发环境的配置文件 ，现在主要配置了 baseURL地址
+├── .env.production         // 生产环境的配置文件 ，现在主要配置了 baseURL地址
+└── vue.config.js           // 修改webpack配置项 写在这里 详细见https://cli.vuejs.org/zh/config/#vue-config-js 
+```
