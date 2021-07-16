@@ -1,7 +1,7 @@
 import nodeResolve from '@rollup/plugin-node-resolve';
 import typescript from '@rollup/plugin-typescript';
 import { terser } from 'rollup-plugin-terser';
-import babel from 'rollup-plugin-babel';
+import babel from '@rollup/plugin-babel';
 import { defineConfig } from 'rollup';
 import path from 'path';
 
@@ -17,23 +17,26 @@ export default defineConfig({
         {
             file: resolve('./', pkg.main),
             format: 'umd',
-            name: 'AppCache'
+            name: 'AppCache',
+            sourcemap: true
         },
         {
             file: resolve('./', pkg.module),
             format: 'es',
-            name: pkg.name
+            name: pkg.name,
+            sourcemap: true
         }
     ],
     plugins: [
         typescript({
-            sourceMap: false
+            declarationDir: path.join(__dirname, './dist/')
         }),
         nodeResolve({
             extensions,
             modulesOnly: true
         }),
         babel({
+            babelHelpers: 'bundled',
             exclude: 'node_modules/**',
             extensions
         }),
