@@ -45,5 +45,5 @@
 │   ├── npm-package-template.es.js         // 打包输出的 es 引入文件
 │   └── npm-package-template.umd.js        // 打包输出的 und 格式文件
 └── src                                    // 源码目录
-	└── main.ts                            // 源码入口文件
+    └── main.ts                            // 源码入口文件
 ```
