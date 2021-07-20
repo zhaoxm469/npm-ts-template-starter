@@ -45,5 +45,10 @@
 		"commitizen": {
 			"path": "./node_modules/cz-conventional-changelog"
 		}
-	}
+	},
+	"repository": {
+        "type": "git",
+        "url": "git+https://github.com/zhaoxm469/npm-ts-template-starter.git"
+    },
+    "homepage": "https://github.com/zhaoxm469/npm-ts-template-starter"
 }
