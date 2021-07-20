@@ -6,7 +6,6 @@
 	"scripts": {
 		"dev": "rollup --c rollup.config.dev.ts --watch",
 		"build": "rollup --c rollup.config.build.ts",
-		"serve":"",
 		"commit": "cz",
 		"npmp": "node npmpublish"
 	},
@@ -37,6 +36,7 @@
 		"rollup": "^2.53.1",
 		"rollup-plugin-babel": "^4.4.0",
 		"rollup-plugin-dev": "^1.1.3",
+		"rollup-plugin-dts": "^3.0.2",
 		"rollup-plugin-livereload": "^2.0.5",
 		"rollup-plugin-terser": "^7.0.2",
 		"typescript": "^4.3.5"
@@ -47,8 +47,8 @@
 		}
 	},
 	"repository": {
-        "type": "git",
-        "url": "git+https://github.com/zhaoxm469/npm-ts-template-starter.git"
-    },
-    "homepage": "https://github.com/zhaoxm469/npm-ts-template-starter"
+		"type": "git",
+		"url": "git+https://github.com/zhaoxm469/npm-ts-template-starter.git"
+	},
+	"homepage": "https://github.com/zhaoxm469/npm-ts-template-starter"
 }
