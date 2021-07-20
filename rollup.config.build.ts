@@ -19,14 +19,12 @@ export default defineConfig([
             {
                 file: resolve('./', pkg.main),
                 format: 'umd',
-                name: 'AppCache',
-                sourcemap: true
+                name: 'AppCache'
             },
             {
                 file: resolve('./', pkg.module),
                 format: 'es',
-                name: pkg.name,
-                sourcemap: true
+                name: pkg.name
             }
         ],
         plugins: [
@@ -50,7 +48,7 @@ export default defineConfig([
         // 生成 .d.ts 类型声明文件
         input: resolve('./src/main.ts'),
         output: {
-            file: resolve('./dist/' + pkg.name + '.d.ts'),
+            file: resolve('./dist/index.d.ts'),
             format: 'es'
         },
         plugins: [dts()]

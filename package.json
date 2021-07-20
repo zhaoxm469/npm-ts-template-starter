@@ -9,6 +9,7 @@
 		"commit": "cz",
 		"npmp": "node npmpublish"
 	},
+	"typings": "./dist/index.d.ts",
 	"main": "./dist/index.umd.js",
 	"module": "./dist/index.es.js",
 	"exports": {
