@@ -40,5 +40,10 @@
 	},
 	"dependencies": {
 		"vite": "^2.4.1"
-	}
+	},
+	"repository": {
+        "type": "git",
+        "url": "git+https://github.com/zhaoxm469/npm-ts-template-starter.git"
+    },
+    "homepage": "https://github.com/zhaoxm469/npm-ts-template-starter"
 }
