@@ -16,10 +16,9 @@ export default defineConfig({
     output: [
         {
             file: resolve('./', pkg.main),
+            // 暴露外部的全局变量名称
             format: 'umd',
-            // 一般指向pkg.name 就可以了 ， 这里是demo 就先写死一个
             name: 'AppCache',
-            // 方便出现问题定位调试
             sourcemap: true
         },
         {

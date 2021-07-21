@@ -18,6 +18,7 @@ export default defineConfig([
         output: [
             {
                 file: resolve('./', pkg.main),
+                // 暴露外部的全局变量名称
                 format: 'umd',
                 name: 'AppCache'
             },
