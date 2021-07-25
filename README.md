@@ -48,3 +48,7 @@
 └── src                                    // 源码目录
     └── main.ts                            // 源码入口文件
 ```
+
+## 其他问题  
+
+1. 当我们运行npm run dev , 提示 报错信息 `throw new Error( esbuild: Failed to install correctly`. [点击我查看解决方案](<https://www.yuque.com/docs/share/343408ab-c80f-47fb-bae0-37caea6f78c9>)  
