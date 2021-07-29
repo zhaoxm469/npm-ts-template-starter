@@ -29,10 +29,6 @@
 
 * npm run npmp
 
-推送到npm远程
-
-* npm run npmp
-
 运行测试用例
 
 * npm run test
