@@ -33,6 +33,14 @@
 
 * npm run npmp
 
+运行测试用例
+
+* npm run test
+
+输出可视化测试覆盖报表
+
+* npm run coverage
+
 ## 目录结构
 
 ```code
