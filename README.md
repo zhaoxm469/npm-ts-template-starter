@@ -22,6 +22,14 @@
 
 * npm run npmp
 
+运行测试用例
+
+* npm run test
+
+输出可视化测试覆盖报表
+
+* npm run coverage
+
 ## 目录结构
 
 ```code
@@ -30,6 +38,7 @@
 ├── rollup.config.build.ts                 // rollup打包配置
 ├── rollup.config.dev.ts                   // rollup开发运行配置
 ├── npmpublish.js                          // npm 发布命令
+├── __test__                               // jest 测试用例
 ├── examples                               // 开发时，运行 npm run dev ，进行代码调试 
 │   └── index.html
 ├── tsconfig.json                          // ts 配置文件

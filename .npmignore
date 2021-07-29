@@ -19,3 +19,4 @@ tsconfig.json
 vite.config.ts
 .vscode
 __test__
+coverage
