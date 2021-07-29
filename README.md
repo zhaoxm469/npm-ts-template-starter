@@ -29,6 +29,10 @@
 
 * npm run npmp
 
+推送到npm远程
+
+* npm run npmp
+
 ## 目录结构
 
 ```code
@@ -36,6 +40,7 @@
 ├── package.json                           // 里边相关配置 需要自己手动更改为项目匹配的信息
 ├── vite.config.ts                         // vite 配置
 ├── npmpublish.js                          // npm 发布命令
+├── __test__                               // 测试用例代码
 ├── examples                               // 自测时，自己可以 运行 : npm run dev ，启动index.html . 然后引用插件进行自测等
 │   └── index.html
 ├── tsconfig.json                          // ts 配置文件
