@@ -6,7 +6,12 @@
 
 将这个项目克隆到本地, 推荐使用 [fast-template-cli](https://www.npmjs.com/package/fast-template-cli) 进行创建此模板.  
 
-[修改详细说明](./docs/steps.md)
+[修改说明](./docs/steps.md)
+
+## 案例
+
+[短小而强悍的工具插件 , 用于帮助我们快速确认当前网页所运行环境.](https://github.com/zhaoxm469/web-page-confirm-environment)
+[轻量且强悍的 Cache库, 为您暴露丰富而统一的 API, 使得业务调用更加简便.](https://github.com/zhaoxm469/iweb-cache)
 
 ## script 命令
 
