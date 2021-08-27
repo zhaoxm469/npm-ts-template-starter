@@ -10,8 +10,8 @@
 
 ## 案例
 
-[短小而强悍的工具插件 , 用于帮助我们快速确认当前网页所运行环境.](https://github.com/zhaoxm469/web-page-confirm-environment)
-[轻量且强悍的 Cache库, 为您暴露丰富而统一的 API, 使得业务调用更加简便.](https://github.com/zhaoxm469/iweb-cache)
+1. [短小而强悍的工具插件 , 用于帮助我们快速确认当前网页所运行环境.](https://github.com/zhaoxm469/web-page-confirm-environment)  
+2. [轻量且强悍的 Cache库, 为您暴露丰富而统一的 API, 使得业务调用更加简便.](https://github.com/zhaoxm469/iweb-cache)  
 
 ## script 命令
 
