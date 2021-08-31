@@ -1,6 +1,7 @@
 import nodeResolve from '@rollup/plugin-node-resolve';
 import typescript from '@rollup/plugin-typescript';
 import livereload from 'rollup-plugin-livereload';
+import replace from 'rollup-plugin-replace';
 import { defineConfig } from 'rollup';
 import dev from 'rollup-plugin-dev';
 import path from 'path';
@@ -41,6 +42,9 @@ export default defineConfig({
             host: 'localhost',
             spa: './examples/index.html',
             force: true
+        }),
+        replace({
+            NODE_ENV: 'development'
         }),
         livereload()
     ]

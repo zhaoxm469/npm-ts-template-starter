@@ -1,6 +1,7 @@
 import nodeResolve from '@rollup/plugin-node-resolve';
 import typescript from '@rollup/plugin-typescript';
 import { terser } from 'rollup-plugin-terser';
+import replace from 'rollup-plugin-replace';
 import babel from '@rollup/plugin-babel';
 import { defineConfig } from 'rollup';
 import dts from 'rollup-plugin-dts';
@@ -41,6 +42,9 @@ export default defineConfig([
                 babelHelpers: 'bundled',
                 exclude: 'node_modules/**',
                 extensions
+            }),
+            replace({
+                NODE_ENV: 'production'
             }),
             terser()
         ]
