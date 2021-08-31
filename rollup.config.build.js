@@ -44,7 +44,7 @@ export default defineConfig([
                 extensions
             }),
             replace({
-                NODE_ENV: 'production'
+                'process.env.NODE_ENV': 'production'
             }),
             terser()
         ]
