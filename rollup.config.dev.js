@@ -44,7 +44,7 @@ export default defineConfig({
             force: true
         }),
         replace({
-            'process.env.NODE_ENV': 'development'
+			'process.env.NODE_ENV': JSON.stringify('development')
         }),
         livereload()
     ]
