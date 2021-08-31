@@ -4,8 +4,8 @@
 	"description": "构建库或者插件的 项目通用模板 .",
 	"keywords": [],
 	"scripts": {
-		"dev": "rollup --c rollup.config.dev.ts --watch",
-		"build": "rollup --c rollup.config.build.ts",
+		"dev": "rollup --c rollup.config.dev.js --watch",
+		"build": "rollup --c rollup.config.build.js",
 		"commit": "cz",
 		"npmp": "node npmpublish",
 		"test": "jest",
