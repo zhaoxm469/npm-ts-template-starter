@@ -2,8 +2,8 @@ import nodeResolve from '@rollup/plugin-node-resolve';
 import typescript from '@rollup/plugin-typescript';
 import livereload from 'rollup-plugin-livereload';
 import replace from 'rollup-plugin-replace';
+import server from 'rollup-plugin-serve'
 import { defineConfig } from 'rollup';
-import dev from 'rollup-plugin-dev';
 import path from 'path';
 
 import pkg from './package.json';
@@ -37,12 +37,12 @@ export default defineConfig({
             extensions,
             modulesOnly: true
         }),
-        dev({
-            port: '6666',
-            host: 'localhost',
-            spa: './examples/index.html',
-            force: true
-        }),
+		server({
+			host: 'localhost',
+			contentBase: ['./examples'],
+			port: 10001,
+			open:true,
+		}),
         replace({
 			'process.env.NODE_ENV': JSON.stringify('development')
         }),
