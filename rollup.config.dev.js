@@ -39,7 +39,7 @@ export default defineConfig({
         }),
 		server({
 			host: 'localhost',
-			contentBase: ['./examples'],
+			contentBase: ['./examples','dist'],
 			port: 10001,
 			open:true,
 		}),
